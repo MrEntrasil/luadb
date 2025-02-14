@@ -14,10 +14,13 @@ db.__index = db
 ---@param name string
 function db.new(name)
     assert(name, "name parameter not provided.")
+    if not fs.existsSync(('./database/%s.json'):format(name)) then
+        fs.mkdirSync('./database')
+    end
 
     return setmetatable({
         name = name,
-        path = 'database/'..name..".json"
+        path = ('./database/%s.json'):format(name)
     }, db)
 end
 
