@@ -1,0 +1,40 @@
+site_name: luadb
+site_url: https://mrentrasil.github.io/luadb
+repo_name: MrEntrasil/luadb
+repo_url: https://github.com/MrEntrasil/luadb
+
+nav:
+  - Home: index.md
+  - Reference:
+    - FindAndSet: reference/FindAndSet.md
+    - FindAndUpdate: reference/FindAndUpdate.md
+    - FindAndGet: reference/FindAndGet.md
+    - RefreshId: reference/RefreshId.md
+    - Refresh: reference/Refresh.md
+    - exists: reference/exists.md
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: black
+    accent: indigo
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - content.code.copy
+    - content.code.select
+    - content.code.annotate
+  favicon: assets/fs_logo.png
+  logo: assets/fs_logo.png
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences

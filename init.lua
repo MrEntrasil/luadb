@@ -42,11 +42,6 @@ function db._write(path, content)
     fs.writeFileSync(path, json.stringify(content))
 end
 
---[[
-id:
-    key: value
-]]--
-
 ---@param tab table
 ---@param id any
 ---@param ... unknown
@@ -122,23 +117,32 @@ end
 
 ---@param id any
 ---@param key any
----@return any
+---@return table|nil
 function db:FindAndGet(id, key)
     assert(id, "id parameter not provided.")
     assert(key, "key parameter not provided.")
     local d = self._read(self.path)
 
+    if not d[id] then
+        return nil
+    end
+
     return d[id][key]
 end
 
 ---@param id any
+---@param key any
 ---@return boolean
-function db:exists(id)
+function db:exists(id, key)
     assert(id, "id parameter not provided.")
     local d = self._read(self.path)
 
     if d[id] then
-        return true
+        if d[id][key] then
+            return true
+        else
+            return false
+        end
     else
         return false
     end
