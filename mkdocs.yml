@@ -7,7 +7,7 @@ nav:
   - Home: index.md
   - Reference:
     - FindAndSet: reference/FindAndSet.md
-    - FindAndUpdate: reference/FindAndUpdate.md
+    - FindAndReplace: reference/FindAndReplace.md
     - FindAndGet: reference/FindAndGet.md
     - RefreshId: reference/RefreshId.md
     - Refresh: reference/Refresh.md
