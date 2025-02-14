@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://mrentrasil.github.io/luadb/</loc>
+         <lastmod>2025-02-14</lastmod>
+    </url>
+    <url>
+         <loc>https://mrentrasil.github.io/luadb/reference/FindAndGet/</loc>
+         <lastmod>2025-02-14</lastmod>
+    </url>
+    <url>
+         <loc>https://mrentrasil.github.io/luadb/reference/FindAndReplace/</loc>
+         <lastmod>2025-02-14</lastmod>
+    </url>
+    <url>
+         <loc>https://mrentrasil.github.io/luadb/reference/FindAndSet/</loc>
+         <lastmod>2025-02-14</lastmod>
+    </url>
+    <url>
+         <loc>https://mrentrasil.github.io/luadb/reference/Refresh/</loc>
+         <lastmod>2025-02-14</lastmod>
+    </url>
+    <url>
+         <loc>https://mrentrasil.github.io/luadb/reference/RefreshId/</loc>
+         <lastmod>2025-02-14</lastmod>
+    </url>
+    <url>
+         <loc>https://mrentrasil.github.io/luadb/reference/exists/</loc>
+         <lastmod>2025-02-14</lastmod>
+    </url>
+</urlset>
